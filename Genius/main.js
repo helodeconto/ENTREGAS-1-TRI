@@ -19,8 +19,11 @@ divMain.addEventListener("click", ev => {
     }
     const idxClickedElement = divs.indexOf(ev.target)
     if (idxClickedElement !== sequencia[currentColorPosition]) {
-        alert("Você perdeu, comece de novo!")
-        inicio()
+        swal({
+            icon: 'error',
+            title: "Você perdeu!",
+            text: "Deseja começar de novo?"
+        })
         return
     }
     currentColorPosition++
