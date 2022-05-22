@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    padding: 8vh 10vw 0vh 10vw;
+    align-content: center;
+    align-items: center;
+}
+
+@keyframes pisca {
+    50% {
+        background-color: white;
+    }
+}
+
+main {
+    border: 5px;
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > div {
+    border: 5px solid black;
+    width: 50%;
+    flex: none;
+    cursor: pointer;
+}
+
+main > div:nth-child(1){
+    background-color: red;
+    border-radius: 10vh 0vh 0vh 0vh;
+}
+
+main > div:nth-child(2) {
+    background-color: blue;
+    border-radius: 0vh 10vh 0vh 0vh;
+}
+
+main > div:nth-child(3) {
+    background-color: green;
+    border-radius: 0vh 0vh 0vh 10vh;
+}
+
+main > div:nth-child(4) {
+    background-color: yellow;
+    border-radius: 0vh 0vh 10vh 0vh;
+    
+}
+
+main > div.animate {
+    /*background: white;*/
+    animation: pisca 1s ease-in-out;
+    /*animation-name: pisca;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;*/
+}
+
+div.pontuacao {
+    position: fixed;
+    width: 20vw;
+    right: 22vw;
+    top: 1.5vh;
+    border-radius: 2vh;
+    padding: 4vmin;
+    background-color: #404040;
+    color: #ffffffff;
+    text-align: center;
+    font-size: 4vh;
+}
+
+div.start {
+    position: fixed;
+    width: 15vw;
+    right: 5vw;
+    top: 1.5vh;
+    border-radius: 2vh;
+    padding: 4vmin;
+    background-color: #404040;
+    color: #ffffffff;
+    text-align: center;
+    font-size: 4vh;
+    cursor: pointer;
+}

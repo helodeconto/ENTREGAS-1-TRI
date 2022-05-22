@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --ascent-color: #F5B8EB;
+    --background-color: #fff8ea;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+header {
+    padding: .25em;
+    background-color: var(--ascent-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.action-bar {
+    padding-top: 2vh;
+}
+
+.action-bar > input {
+    height: 3.5vh;
+}
+
+.action-bar > button {
+    border-radius: 5px;
+    background-color: #f9baff80;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: #f9baff80;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 2em;
+    position: relative;
+}
+
+.modal .bt-close{
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    right: -0.5em;
+    top: -1em;
+    border-radius: 50%;
+    border: 0 none;
+    border: 1px solid #000000;
+    background-color: #F5B8EB;
+    cursor: pointer;
+}
+
+.modal h1 {
+    display: block;
+    margin: 0 0 .25em 0;
+    padding: 0;
+}
+
+.modal form > div {
+    margin-bottom: 1em;
+}
+
+.modal form > div > label {
+    display: block;
+}
+
+.modal form > div > input {
+    width: 100%;
+}
+
+.modal div.action {
+    display: flex;
+}
