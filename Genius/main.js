@@ -52,7 +52,7 @@ function inicio() {
     sequencia = []
     currentColorPosition = 0
     let idx = setInterval(() => {
-        console.log(cnt--)
+        start.innerHTML = cnt--
         if(cnt <= 0) {
             turno()
             clearInterval(idx)
@@ -62,6 +62,7 @@ function inicio() {
 
 function turno() {
     divPontuacao.innerHTML = sequencia.length
+    start.innerHTML = 'Reiniciar'
     const rnd = Math.round(Math.random() * 3)
     sequencia.push(rnd)
     playAnimationColors()
